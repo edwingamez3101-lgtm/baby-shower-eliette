@@ -1,0 +1,481 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5e6eb;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #80651b;
+
+    text-align: center;
+}
+
+
+/* =========================
+   PÁGINA
+========================= */
+
+.pagina {
+    width: 100%;
+    max-width: 430px;
+
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    background-color: #fffdfd;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.encabezado {
+
+    padding: 45px 20px 50px;
+
+    background: linear-gradient(
+        to bottom,
+        #f7d9e3,
+        #fffdfd
+    );
+
+    border-bottom: 2px solid #d1b15b;
+}
+
+.flores {
+
+    font-size: 25px;
+
+    letter-spacing: 5px;
+
+    margin: 5px 0 20px;
+}
+
+.encabezado h1 {
+
+    font-size: 32px;
+
+    letter-spacing: 2px;
+
+    margin: 10px 0 15px;
+
+    color: #94741b;
+}
+
+.encabezado h2 {
+
+    font-size: 40px;
+
+    font-weight: normal;
+
+    font-style: italic;
+
+    margin: 0;
+
+    color: #bd8298;
+}
+
+
+/* =========================
+   CUENTA REGRESIVA
+========================= */
+
+.cuenta-regresiva {
+
+    padding: 35px 18px;
+
+    background-color: #f8dce5;
+
+    border-top: 1px solid #e6c1cd;
+
+    border-bottom: 1px solid #e6c1cd;
+}
+
+.cuenta-regresiva h2 {
+
+    font-size: 27px;
+
+    margin: 0 0 10px;
+
+    color: #94741b;
+}
+
+.cuenta-regresiva p {
+
+    margin: 0 0 25px;
+
+    font-size: 16px;
+
+    color: #765f40;
+}
+
+
+/* CONTADOR */
+
+.contador {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 6px;
+}
+
+.tiempo {
+
+    background-color: white;
+
+    border: 1px solid #d9bd68;
+
+    border-radius: 12px;
+
+    padding: 12px 3px;
+}
+
+.tiempo span {
+
+    display: block;
+
+    font-size: 27px;
+
+    font-weight: bold;
+
+    color: #aa842d;
+}
+
+.tiempo small {
+
+    font-size: 11px;
+
+    color: #96758a;
+}
+
+
+/* =========================
+   FECHA
+========================= */
+
+.fecha-evento {
+
+    padding: 45px 20px;
+
+    background-color: #fffdfd;
+}
+
+.fecha-evento .icono {
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.fecha-evento h2 {
+
+    font-size: 32px;
+
+    letter-spacing: 2px;
+
+    margin: 10px 0 20px;
+
+    color: #94741b;
+}
+
+.fecha {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    padding: 12px 5px;
+
+    border-top: 2px solid #efcbd5;
+
+    border-bottom: 2px solid #efcbd5;
+}
+
+.fecha span {
+
+    font-size: 16px;
+
+    color: #8b7026;
+}
+
+.fecha strong {
+
+    font-size: 58px;
+
+    font-weight: normal;
+
+    color: #c98170;
+}
+
+.fecha-evento p {
+
+    font-size: 16px;
+
+    font-style: italic;
+
+    color: #765f40;
+}
+
+
+/* =========================
+   LUGAR
+========================= */
+
+.tarjeta {
+
+    margin: 15px;
+
+    padding: 30px 18px;
+
+    background-color: white;
+
+    border: 1px solid #ead5a2;
+
+    border-radius: 22px;
+}
+
+.icono {
+
+    font-size: 35px;
+
+    margin-bottom: 12px;
+}
+
+.tarjeta h2 {
+
+    font-size: 22px;
+
+    line-height: 1.4;
+
+    margin: 0 0 18px;
+
+    color: #94741b;
+}
+
+.tarjeta p {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #765f40;
+}
+
+.tarjeta .lugar {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    line-height: 1.8;
+
+    color: #94741b;
+}
+
+
+/* =========================
+   CONFIRMACIÓN
+========================= */
+
+.confirmacion {
+
+    margin: 15px;
+
+    padding: 30px 18px;
+
+    background-color: #fff1f5;
+
+    border: 1px solid #e5bdc9;
+
+    border-radius: 22px;
+}
+
+.confirmacion h2 {
+
+    font-size: 23px;
+
+    line-height: 1.4;
+
+    margin: 0 0 18px;
+
+    color: #94741b;
+}
+
+.confirmacion p {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #765f40;
+}
+
+.confirmacion h3 {
+
+    font-size: 27px;
+
+    letter-spacing: 1px;
+
+    color: #94741b;
+
+    margin: 20px 0;
+}
+
+
+/* BOTÓN WHATSAPP */
+
+.boton-whatsapp {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 15px 10px;
+
+    margin: 20px auto 5px;
+
+    border-radius: 30px;
+
+    background-color: #f4cbd7;
+
+    border: 1px solid #dfafbe;
+
+    color: #70541d;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.boton-whatsapp:hover {
+
+    background-color: #e8aabd;
+}
+
+
+/* =========================
+   DESPEDIDA
+========================= */
+
+.despedida {
+
+    padding: 45px 20px;
+
+    background-color: white;
+
+    border-top: 2px solid #e8c7d1;
+}
+
+.despedida h2 {
+
+    font-size: 27px;
+
+    line-height: 1.4;
+
+    color: #94741b;
+}
+
+.despedida p {
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #765f40;
+}
+
+.despedida h3 {
+
+    font-size: 25px;
+
+    font-weight: normal;
+
+    font-style: italic;
+
+    line-height: 1.6;
+
+    color: #bd8298;
+
+    margin: 25px 0;
+}
+
+.frase-final {
+
+    font-style: italic;
+
+    font-size: 15px !important;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+footer {
+
+    padding: 18px 10px;
+
+    background-color: #f3d1dc;
+
+    color: #80651b;
+}
+
+footer p {
+
+    font-size: 13px;
+
+    margin: 0;
+}
+
+
+/* =========================
+   CELULARES PEQUEÑOS
+========================= */
+
+@media (max-width: 350px) {
+
+    .encabezado h1 {
+        font-size: 27px;
+    }
+
+    .encabezado h2 {
+        font-size: 34px;
+    }
+
+    .fecha strong {
+        font-size: 48px;
+    }
+
+    .fecha span {
+        font-size: 13px;
+    }
+
+    .tiempo span {
+        font-size: 22px;
+    }
+
+    .tiempo small {
+        font-size: 10px;
+    }
+
+}
